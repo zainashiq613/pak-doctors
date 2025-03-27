@@ -1,0 +1,934 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AU+SA:wght@100..400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: #21384d;
+  font-family: open sans;
+}
+
+body {
+  background: #fff;
+  overflow: auto;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 0 12px 12px;
+  padding: 10px 70px;
+  background: #f4f9ff;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 53%;
+}
+
+.nav-links ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links ul li {
+  padding: 12px;
+}
+
+.nav-links ul li a {
+  color: #21384d;
+}
+
+.navbar-extra ul {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-extra ul li {
+  padding: 5px;
+}
+
+.navbar-extra ul li a {
+  color: #21384d;
+}
+
+.toggle {
+  display: none;
+}
+
+.hero-section {
+  padding: 89px 70px;
+  background: linear-gradient(99.64deg,
+      rgba(0, 129, 89, 0.5) 2.59%,
+      rgba(2, 188, 230, 0.5) 111.36%),
+    url(./images/memphis.png), url(./images/memphis\ C.png),
+    url(./images/memphi.png);
+  background-position: left 0%, right 100%, right 0%;
+  background-repeat: no-repeat;
+}
+
+.hero-top {
+  padding: 20px 0 0 0;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+}
+
+.hero-top-left {
+  position: relative;
+  top: 25px;
+  flex-basis: 19%;
+  align-self: flex-end;
+}
+
+.hero-top-left img {
+  border-radius: 50%;
+  outline: 3px solid #f2c246;
+  outline-offset: 18px;
+}
+
+.hero-top-left h3 {
+  display: flex;
+  align-items: center;
+  color: #21384d;
+  background: #ffffff;
+  opacity: 80%;
+  font-size: 16px;
+  border-radius: 12px;
+  padding: 16px 30px;
+  position: relative;
+  bottom: 25px;
+  left: 76px;
+}
+
+.hero-top-left h3 img {
+  outline: none;
+}
+
+.hero-center{
+  display: none;
+}
+
+.main-heading {
+  display: flex;
+  align-self: flex-end;
+  flex-direction: column;
+  flex-basis: 45%;
+  flex-wrap: wrap;
+}
+
+.main-heading h3 {
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+}
+
+.main-heading h2 {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 40px;
+}
+
+.main-heading p {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.main-heading a {
+  margin: 0px auto;
+  text-align: center;
+  color: #f4f9ff;
+  border-radius: 12px;
+  padding: 12px 69px;
+  background: #f2c246;
+}
+
+.main-heading span {
+  color: #f2c246;
+}
+
+.hero-top-right {
+  position: relative;
+  flex-basis: 19%;
+  left: 40px;
+  bottom: 30px;
+}
+
+.hero-top-right img {
+  border-radius: 50%;
+  outline: 3px solid #f2c246;
+  outline-offset: 18px;
+}
+
+.hero-top-right h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #02bce6;
+  background: #ffffff;
+  opacity: 80%;
+  font-size: 16px;
+  border-radius: 12px;
+  padding: 16px 30px;
+  position: relative;
+  bottom: 30px;
+  right: 76px;
+}
+
+.hero-top-right h3 img {
+  outline: none;
+}
+
+.hero-bottom {
+  margin-top: 60px;
+  background: #ffffff99;
+  -webkit-backdrop-filter: blur(100%);
+  backdrop-filter: blur(100%);
+  border-radius: 16px;
+  padding: 24px 140px;
+}
+
+.hero-bottom h1 {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #21384d;
+}
+
+.hero-bottom p {
+  margin-bottom: 20px;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 20px;
+  color: #21384d;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 75%;
+  padding: 3px 32px;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.search-bar p{
+  margin-top: 12px;
+  color: #2a2a2a;
+}
+
+.search-bar-left {
+  flex-basis: 55%;
+}
+
+.search-bar-right {
+  flex-basis: 22%;
+  display: flex;
+  justify-content: end;
+}
+
+.search-bar div {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar-right a {
+  display: flex;
+  gap: 10px;
+  padding-left: 17px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px 32px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+}
+
+.search-btn a {
+  border-radius: 12px;
+  padding: 12px 69px;
+  background: #f2c246;
+  color: #ffffff;
+}
+
+.offer {
+  background: url(./images/memphis.png), url(./images/memphi.png);
+  background-position: left 0%, right 100%, right 0%;
+  background-repeat: no-repeat;
+  padding: 50px 70px;
+}
+
+.offer h1 {
+  text-align: center;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.offer p {
+  margin-top: 20px;
+  text-align: center;
+  font-family: Urbanist;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.offer-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex-basis: 49.4%;
+  margin-top: 51px;
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  box-shadow: -4px 4px 10px 0px #0000000f;
+}
+
+.item:last-child {
+  flex-basis: 75%;
+}
+
+.item-left {
+  padding: 20px;
+}
+
+.item-left h2 {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.item-left p {
+  text-align: left;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.item-left span {
+  text-align: left;
+  font-weight: 600;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.item-left a {
+  position: relative;
+  top: 28px;
+  border-radius: 12px;
+  padding: 12px 69px;
+  background: linear-gradient(180deg,
+      rgba(0, 129, 89, 0.5) 0%,
+      rgba(2, 188, 230, 0.5) 100%);
+}
+
+.top-search {
+  background: url(./images/memphis.png), url(./images/memphi.png);
+  background-position: left 0%, right 100%, right 0%;
+  background-repeat: no-repeat;
+  padding: 45px 70px;
+}
+
+.top-search h1 {
+  text-align: center;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.top-search p {
+  margin-top: 20px;
+  text-align: center;
+  font-family: Urbanist;
+  font-weight: 400;
+  font-size: 24px;
+  color: #2a2a2ab2;
+}
+
+.search-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.s-item {
+  margin-top: 32px;
+  flex-basis: 12%;
+}
+
+.s-item h3 {
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 16px;
+  color: #21384d;
+}
+
+.doctors {
+  padding: 32px 70px;
+  margin-top: 50px;
+  background: linear-gradient(99.64deg,
+      rgba(0, 129, 89, 0.25) 2.59%,
+      rgba(2, 188, 230, 0.25) 111.36%);
+}
+
+.doctors h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 40px;
+  color: #2a2a2a;
+}
+
+.doctors p {
+  text-align: center;
+  font-family: Urbanist;
+  font-weight: 400;
+  font-size: 24px;
+  color: #2a2a2ab2;
+}
+
+.doctor-items {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  overflow-x: scroll;
+}
+
+.d-item {
+  margin-top: 32px;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 32px;
+  background: #ffffff;
+  box-shadow: 0px 8px 20px 0px #00000014;
+}
+
+.d-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 250px;
+  border-radius: 12px;
+  padding: 6px;
+  background: #02bce61a;
+  box-shadow: 0px 8px 20px 0px #00000014;
+}
+
+.d-top img {
+  width: 100px;
+  height: 100px;
+}
+
+.d-top h4 {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 22px;
+  color: #2a2a2a;
+}
+
+.d-top span {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 12px;
+  color: #2a2a2ae5;
+}
+
+.d-bottom p {
+  margin-top: 15px;
+  text-align: left;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 17px;
+  color: #2a2a2acc;
+}
+
+.d-bottom .review {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+::-webkit-scrollbar {
+  appearance: none;
+  border-radius: 12px;
+  height: 5px;
+  background: #02bce64d;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  height: 10px;
+  background: #02bce6;
+}
+
+.testimonials {
+  background: url(./images/memphis.png), url(./images/memphi.png);
+  background-position: left 0%, right 100%, right 0%;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  padding: 80px 150px;
+}
+
+.testimonials h1 {
+  text-align: center;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 40px;
+  color: #2a2a2a;
+  margin-bottom: 20px;
+}
+
+.testimonials p {
+  text-align: center;
+  font-family: Urbanist;
+  font-weight: 400;
+  font-size: 24px;
+  color: #2a2a2ab2;
+}
+
+.testimonials-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.t-item {
+  flex-basis: 31%;
+  padding: 17px;
+  margin-top: 82px;
+  background: #ffffff;
+  border: 1px solid #70858333;
+  border-radius: 16px;
+  box-shadow: -4px 4px 10px 0px #0000000f;
+}
+
+.t-info {
+  display: flex;
+  gap: 20px;
+}
+
+.t-info div h3 {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 21px;
+  color: #2a2a2a;
+}
+
+.t-info div span {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 20px;
+  color: #2a2a2ab2;
+}
+
+.t-info img {
+  border-radius: 12px;
+  position: relative;
+  top: -70px;
+}
+
+.t-reviews {
+  margin-top: -56px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.t-item p {
+  margin-top: 13px;
+  margin-bottom: 28px;
+  text-align: left;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2a2a2a;
+}
+
+.t-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.work {
+  background: linear-gradient(99.64deg,
+      rgba(0, 129, 89, 0.5) 2.59%,
+      rgba(2, 188, 230, 0.5) 111.36%),
+    url(./images/memphis.png), url(./images/memphis\ C.png),
+    url(./images/memphi.png);
+  background-position: left 0%, right 100%, right;
+  background-repeat: no-repeat;
+  padding: 69px 61px;
+  display: flex;
+  align-items: center;
+  gap: 114px;
+}
+
+.work-img-2{
+  display: none;
+}
+
+.work-info {
+  flex-basis: 33%;
+}
+
+.work-info h3 {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 24px;
+  color: #2a2a2a;
+  margin-bottom: 20px;
+}
+
+.work-info h1 {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 40px;
+  color: #2a2a2a;
+  margin-bottom: 10px;
+}
+
+.work-info h1 span {
+  color: #f2c246;
+}
+
+.work-info p {
+  margin-bottom: 32px;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2a2a2acc;
+}
+
+.work-info div ul li {
+  margin-bottom: 12px;
+  color: #2a2a2acc;
+}
+
+.work-info div ul li img {
+  margin-right: 8px;
+}
+
+.work-info a {
+  position: relative;
+  top: 32px;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 16px 32px;
+  background: #f2c246;
+}
+
+.top-symptoms {
+  background: url(./images/memphis.png), url(./images/memphi.png);
+  background-position: left 0%, right 100%, right 0%;
+  background-repeat: no-repeat;
+  padding: 45px 70px;
+}
+
+.top-symptoms h1 {
+  text-align: center;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.top-symptoms p {
+  margin-top: 20px;
+  text-align: center;
+  font-family: Urbanist;
+  font-weight: 400;
+  font-size: 24px;
+  color: #2a2a2ab2;
+}
+
+.symptoms-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sy-item {
+  margin-top: 32px;
+  flex-basis: 12%;
+}
+
+.sy-item h3 {
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 16px;
+  color: #21384d;
+}
+
+.join {
+  background: linear-gradient(99.64deg,
+      rgba(0, 129, 89, 0.5) 2.59%,
+      rgba(2, 188, 230, 0.5) 111.36%),
+    url(./images/memphis.png), url(./images/memphis\ C.png),
+    url(./images/memphi.png);
+  background-position: left 0%, right 100%, right;
+  background-repeat: no-repeat;
+  padding: 69px 61px;
+  display: flex;
+  align-items: center;
+  gap: 114px;
+}
+
+.join-img-2{
+  display: none;
+}
+
+.join-info {
+  flex-basis: 33%;
+}
+
+.join-info h3 {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 24px;
+  color: #2a2a2a;
+  margin-bottom: 20px;
+}
+
+.join-info h1 {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 40px;
+  color: #2a2a2a;
+  margin-bottom: 10px;
+}
+
+.join-info h1 span {
+  color: #f2c246;
+}
+
+.join-info p {
+  margin-bottom: 32px;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2a2a2acc;
+}
+
+.join-info div ul li {
+  margin-bottom: 12px;
+  color: #2a2a2acc;
+}
+
+.join-info div ul li img {
+  margin-right: 8px;
+}
+
+.join-info a {
+  position: relative;
+  top: 32px;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 16px 32px;
+  background: #f2c246;
+}
+
+.top-companies {
+  background: url(./images/memphis.png), url(./images/memphi.png);
+  background-position: left 0%, right 100%, right 0%;
+  background-repeat: no-repeat;
+  padding: 45px 70px;
+}
+
+.top-companies h1 {
+  text-align: center;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.top-companies p {
+  margin-top: 20px;
+  text-align: center;
+  font-family: Urbanist;
+  font-weight: 400;
+  font-size: 24px;
+  color: #2a2a2ab2;
+}
+
+.companies-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.c-item {
+  margin-top: 32px;
+  flex-basis: 12%;
+}
+
+.cssh {
+  background: linear-gradient(99.64deg,
+      rgba(0, 129, 89, 0.25) 2.59%,
+      rgba(2, 188, 230, 0.25) 111.36%),
+    url(./images/memphis.png), url(./images/memphis\ C.png),
+    url(./images/memphi.png);
+  background-position: left 0%, right 100%, right 0%;
+  background-repeat: no-repeat;
+  padding: 32px 70px;
+}
+
+.cssh h1 {
+  text-align: center;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 32px;
+  color: #2a2a2a;
+}
+
+.cssh-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cssh-item {
+  flex-basis: 30%;
+}
+
+.cssh-item h2 {
+  width: 100%;
+  border-bottom: 1px solid #000;
+  padding-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cssh-item ul {
+  margin-top: 24px;
+}
+
+.cssh-item ul li {
+  margin-bottom: 8px;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2a2a2ab2;
+}
+
+.cssh-item ul li img {
+  margin-right: 8px;
+}
+
+footer {
+  background: #2a2a2ae5;
+  padding: 64px 71px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-text {
+  flex-basis: 20%;
+}
+
+.footer-links {
+  flex-basis: 17%;
+  margin-top: 20px;
+}
+
+.footer-text p {
+  margin-top: 13px;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.footer-links{
+  flex-basis: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links ul li {
+  margin-bottom: 4px;
+}
+
+.footer-links ul li a {
+  flex-basis: 20%;
+  color: #ffffff;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.footer-links ul li:first-child a {
+  color: #f3a951;
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.dex-copyright {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mob-copyright{
+  display: none;
+}
+
+.privacy ul {
+  display: flex;
+  align-items: center;
+}
+
+.privacy ul li {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  margin-right: 40px;
+  color: #ffffff;
+}
+
+.des-social-links ul {
+  display: flex;
+  gap: 16px;
+}
+
+.mob-social-links{
+  display: none;
+}
