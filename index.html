@@ -11,9 +11,9 @@
 
 <body>
   <nav class="navbar">
-    <h2><img src="./images/Layer_1.png" alt="" /></h2>
+    <h2 class="web-h2"><img src="./images/Layer_1.png" alt="" /></h2>
     <div class="navbar-links" id="nav">
-      <div class="nav-links">
+      <div class="web-nav-links">
         <ul>
           <li>
             <a href="#">Doctors <img src="./images/Icon.png" alt="" /></a>
@@ -25,7 +25,7 @@
           <li><a href="#">Appointments</a></li>
         </ul>
       </div>
-      <div class="navbar-extra">
+      <div class="web-navbar-extra">
         <ul>
           <li>
             <a href="#"><img src="./images/clarity_settings-line.png" alt="" /></a>
@@ -40,6 +40,46 @@
             <a href="#">Florida Amy <img src="./images/Icon.png" alt="" /></a>
           </li>
         </ul>
+      </div>
+      <div class="extra"></div>
+      <div class="mob-nav">
+        <div class="cross">
+          <a href="#" id="cross-btn"><img src="./images/cross.png" alt=""></a>
+        </div>
+        <h2 class="mob-h2"><img src="./images/Layer_1.png" alt="" /></h2>
+        <div class="mob-nav-links">
+          <p>Login</p>
+          <div class="mob--login-links">
+            <a href="#">Sign In</a>
+            <a href="#">Sign Up</a>
+          </div>
+          <p>or</p>
+          <div class="join-doc-btn">
+            <a href="#">Join as a doctor</a>
+          </div>
+          <div class="mob-extra-links">
+            <ul>
+              <li>
+                <div><img src="./images/cil_home.png" alt=""></div> Home
+              </li>
+              <li>
+                <div><img src="./images/iconoir_profile-circled.png" alt=""></div> Doctors
+              </li>
+              <li>
+                <div><img src="./images/clarity_info-standard-line.png" alt=""></div> Hospitals
+              </li>
+              <li>
+                <p>Profile</p>
+              </li>
+              <li>
+                <div><img src="./images/setting.png" alt=""></div> Settings
+              </li>
+              <li>
+                <div><img src="./images/clarity_tags-line.png" alt=""></div> Logout
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     <div class="toggle">
@@ -175,7 +215,7 @@
   <div class="doctors">
     <h1>Qualified Doctors</h1>
     <p>Our professional doctor working for your medical health</p>
-    <div class="doctor-items">
+    <div class="doctor-items" id="doctor-items">
       <div class="d-item">
         <div class="d-top">
           <img src="./images/Rectangle 2487.png" alt="">
@@ -313,6 +353,12 @@
         </div>
       </div>
     </div>
+    <div class="slider" id="slider">
+      <button id="slider-btn1"></button>
+      <button id="slider-btn2"></button>
+      <button id="slider-btn3"></button>
+    </div>
+
   </div>
   <div class="testimonials">
     <h1>Testimonials</h1>
@@ -493,7 +539,7 @@
         <h2 id="symptoms"><span>Symptoms</span>
           <div><img src="./images/Icon.png" alt=""></div>
         </h2>
-        <ul id="symptoms-ul">
+        <ul id="symptoms-ul" class="show">
           <li><img src="./images/arrow.png" alt=""> Acanthosis nigricans</li>
           <li><img src="./images/arrow.png" alt=""> Basal cell carcinoma </li>
           <li><img src="./images/arrow.png" alt=""> Dark Circle Treatments</li>
@@ -640,24 +686,61 @@
     let toggleBtn = document.getElementById('toggle-btn');
     let nav = document.getElementById('nav');
     toggleBtn.addEventListener('click', () => {
-      nav.classList.toggle('navbar-active');
+      nav.classList.add('navbar-active');
     });
+
+    let closeBtn = document.getElementById('cross-btn');
+    let navBar = document.getElementById('nav');
+    closeBtn.addEventListener('click', () => {
+      navBar.classList.remove('navbar-active');
+    })
+
     let symptoms = document.getElementById('symptoms');
     let symptomsUl = document.getElementById('symptoms-ul');
     symptoms.addEventListener('click', () => {
       symptomsUl.classList.toggle('show')
-      
+      hospitalsUl.classList.remove('show')
+      surgeriesUl.classList.remove('show')
     });
     let surgeries = document.getElementById('surgeries');
     let surgeriesUl = document.getElementById('surgeries-ul');
     surgeries.addEventListener('click', () => {
       surgeriesUl.classList.toggle('show')
+      symptomsUl.classList.remove('show')
+      hospitalsUl.classList.remove('show')
     });
     let hospitals = document.getElementById('hospitals');
     let hospitalsUl = document.getElementById('hospitals-ul');
     hospitals.addEventListener('click', () => {
       hospitalsUl.classList.toggle('show')
+      symptomsUl.classList.remove('show')
+      surgeriesUl.classList.remove('show')
     });
+    let sliderBtn1 = document.getElementById('slider-btn1')
+    let sliderBtn2 = document.getElementById('slider-btn2')
+    let sliderBtn3 = document.getElementById('slider-btn3')
+    let doctorItems = document.getElementById('doctor-items')
+    doctorItems.addEventListener("scroll", function () {
+      let scrollAmount = this.scrollLeft;
+      if (scrollAmount > 0 && scrollAmount < 600) {
+        sliderBtn1.style.width = 13 + "px"
+      }
+      if (scrollAmount > 600 && scrollAmount < 1200) {
+        sliderBtn1.style.width = 6 + "px"
+        sliderBtn2.style.width = 13 + "px"
+      }
+      if (scrollAmount > 1200 && scrollAmount < 1800) {
+        sliderBtn1.style.width = 6 + "px"
+        sliderBtn2.style.width = 6 + "px"
+        sliderBtn3.style.width = 13 + "px"
+      }
+      if (scrollAmount == 0) {
+        sliderBtn1.style.width = 6 + "px"
+        sliderBtn2.style.width = 6 + "px"
+        sliderBtn3.style.width = 6 + "px"
+      }
+    });
+
   </script>
 </body>
 

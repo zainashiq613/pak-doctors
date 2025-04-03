@@ -7,7 +7,7 @@
     flex-basis: 69%;
   }
 
-  .nav-links ul li {
+  .web-nav-links ul li {
     padding: 10px;
   }
 
@@ -182,7 +182,7 @@
   }
 
   .work {
-    height: 80vh;
+    height: 110vh;
     padding: 40px 50px;
     gap: 50px;
   }
@@ -349,6 +349,114 @@
 }
 
 @media screen and (max-width: 768px) {
+  .mob-nav-links {
+    display: block;
+  }
+
+  .mob-navbar-extra {
+    display: block;
+  }
+
+  .cross {
+    display: block;
+    padding: 20px 22px;
+  }
+
+  .mob-nav {
+    padding: 20px 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    left: 10%;
+    height: 100vh;
+    border-radius: 16px 0 0 16px;
+    background: #fff;
+  }
+
+  .cross {
+    padding: 0;
+    width: 100%;
+  }
+
+  .mob-nav-links p {
+    font-size: 14px;
+    margin-left: 4%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .mob-nav h2 {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .mob-nav-links {
+    margin-left: -27px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .mob--login-links {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+  }
+
+  .mob--login-links a {
+    width: 30%;
+    text-align: center;
+    background: #f2c246;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #ffffff;
+  }
+
+  .join-doc-btn {
+    width: 96%;
+    margin-left: 27px;
+  }
+
+  .join-doc-btn a {
+    display: block;
+    background: linear-gradient(
+      99.64deg,
+      rgba(0, 129, 89, 0.5) 2.59%,
+      rgba(2, 188, 230, 0.5) 111.36%
+    );
+    border-radius: 16px;
+    padding: 12px 24px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .mob-extra-links {
+    padding: 0 47px;
+  }
+
+  .mob-extra-links ul {
+    margin-top: 24px;
+    padding: 0;
+  }
+
+  .mob-extra-links ul li img {
+    padding: 0;
+    margin-right: 20px;
+  }
+
+  .mob-extra-links ul li {
+    width: 30%;
+    margin-left: -20px;
+    margin-top: 10px;
+    display: flex;
+  }
+
+  .mob-extra-links ul li p {
+    margin-left: 8px;
+  }
+
   .navbar {
     padding: 10px 20px;
   }
@@ -358,39 +466,22 @@
   }
 
   .navbar-links {
-    background: #ffff;
+    display: flex;
+    background: #2a2a2ae5;
     height: 0px;
-    flex-direction: column-reverse;
-    justify-content: start;
     overflow: hidden;
     position: absolute;
-    top: 75px;
+    top: 0px;
     right: 0px;
     width: 100%;
-    transition: min-height 5s;
   }
 
-  .nav-links ul {
-    flex-direction: column;
+  .web-navbar-extra {
+    display: none;
   }
 
-  .navbar-extra {
-    width: 100%;
-  }
-
-  .navbar-extra ul {
-    gap: 10px;
-    justify-content: center;
-  }
-
-  .nav-links {
-    width: 100%;
-  }
-
-  .nav-links ul li {
-    width: 100%;
-    padding-bottom: 13px;
-    border-bottom: 1px solid #21384d4d;
+  .web-nav-links {
+    display: none;
   }
 
   .toggle {
@@ -519,6 +610,7 @@
   }
 
   .top-search {
+    background: none;
     padding: 30px 50px;
   }
 
@@ -543,6 +635,18 @@
   .search-items {
     flex-wrap: nowrap;
     overflow-x: scroll;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    display: none;
+  }
+
+  .testimonials {
+    background: none;
   }
 
   .testimonials-items {
@@ -624,6 +728,10 @@
     margin-top: 50px;
   }
 
+  .top-symptoms {
+    background: none;
+  }
+
   .sy-item {
     margin-bottom: 32px;
   }
@@ -686,6 +794,10 @@
     margin-top: 50px;
   }
 
+  .top-companies {
+    background: none;
+  }
+
   .companies-items {
     flex-wrap: wrap;
     align-items: center;
@@ -728,9 +840,36 @@
   .des-social-links ul {
     gap: 10px;
   }
+
+  .slider {
+    display: block;
+    position: absolute;
+  }
+
+  .slider button {
+    outline: none;
+    border: none;
+    background: #02bce6;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+  }
 }
 
 @media screen and (max-width: 425px) {
+  .mob-nav-links p {
+    margin-left: 6%;
+  }
+
+  .mob--login-links a {
+    width: 33%;
+  }
+
+  .join-doc-btn a {
+    width: 96%;
+    border-radius: 12px;
+  }
+
   .hero-section {
     padding: 50px 20px;
   }
@@ -762,6 +901,7 @@
   }
 
   .top-search {
+    background: none;
     padding: 25px 20px;
   }
 

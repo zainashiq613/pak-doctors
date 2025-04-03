@@ -32,29 +32,37 @@ body {
   flex-basis: 53%;
 }
 
-.nav-links ul {
+.extra {
+  display: none;
+}
+
+.mob-nav {
+  display: none;
+}
+
+.web-nav-links ul {
   display: flex;
   align-items: center;
 }
 
-.nav-links ul li {
+.web-nav-links ul li {
   padding: 12px;
 }
 
-.nav-links ul li a {
+.web-nav-links ul li a {
   color: #21384d;
 }
 
-.navbar-extra ul {
+.web-navbar-extra ul {
   display: flex;
   align-items: center;
 }
 
-.navbar-extra ul li {
+.web-navbar-extra ul li {
   padding: 5px;
 }
 
-.navbar-extra ul li a {
+.web-navbar-extra ul li a {
   color: #21384d;
 }
 
@@ -64,9 +72,11 @@ body {
 
 .hero-section {
   padding: 89px 70px;
-  background: linear-gradient(99.64deg,
+  background: linear-gradient(
+      99.64deg,
       rgba(0, 129, 89, 0.5) 2.59%,
-      rgba(2, 188, 230, 0.5) 111.36%),
+      rgba(2, 188, 230, 0.5) 111.36%
+    ),
     url(./images/memphis.png), url(./images/memphis\ C.png),
     url(./images/memphi.png);
   background-position: left 0%, right 100%, right 0%;
@@ -111,7 +121,7 @@ body {
   outline: none;
 }
 
-.hero-center{
+.hero-center {
   display: none;
 }
 
@@ -230,7 +240,7 @@ body {
   background: #ffffff;
 }
 
-.search-bar p{
+.search-bar p {
   margin-top: 12px;
   color: #2a2a2a;
 }
@@ -345,9 +355,11 @@ body {
   top: 28px;
   border-radius: 12px;
   padding: 12px 69px;
-  background: linear-gradient(180deg,
-      rgba(0, 129, 89, 0.5) 0%,
-      rgba(2, 188, 230, 0.5) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 129, 89, 0.5) 0%,
+    rgba(2, 188, 230, 0.5) 100%
+  );
 }
 
 .top-search {
@@ -393,11 +405,15 @@ body {
 }
 
 .doctors {
+  display: flex;
+  flex-direction: column;justify-content: end;
   padding: 32px 70px;
   margin-top: 50px;
-  background: linear-gradient(99.64deg,
-      rgba(0, 129, 89, 0.25) 2.59%,
-      rgba(2, 188, 230, 0.25) 111.36%);
+  background: linear-gradient(
+    99.64deg,
+    rgba(0, 129, 89, 0.25) 2.59%,
+    rgba(2, 188, 230, 0.25) 111.36%
+  );
 }
 
 .doctors h1 {
@@ -484,6 +500,11 @@ body {
   border-radius: 12px;
   height: 5px;
   background: #02bce64d;
+}
+
+.slider {
+  align-self: center;
+  display: none;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -582,9 +603,11 @@ body {
 }
 
 .work {
-  background: linear-gradient(99.64deg,
+  background: linear-gradient(
+      99.64deg,
       rgba(0, 129, 89, 0.5) 2.59%,
-      rgba(2, 188, 230, 0.5) 111.36%),
+      rgba(2, 188, 230, 0.5) 111.36%
+    ),
     url(./images/memphis.png), url(./images/memphis\ C.png),
     url(./images/memphi.png);
   background-position: left 0%, right 100%, right;
@@ -595,7 +618,7 @@ body {
   gap: 114px;
 }
 
-.work-img-2{
+.work-img-2 {
   display: none;
 }
 
@@ -692,9 +715,11 @@ body {
 }
 
 .join {
-  background: linear-gradient(99.64deg,
+  background: linear-gradient(
+      99.64deg,
       rgba(0, 129, 89, 0.5) 2.59%,
-      rgba(2, 188, 230, 0.5) 111.36%),
+      rgba(2, 188, 230, 0.5) 111.36%
+    ),
     url(./images/memphis.png), url(./images/memphis\ C.png),
     url(./images/memphi.png);
   background-position: left 0%, right 100%, right;
@@ -705,7 +730,7 @@ body {
   gap: 114px;
 }
 
-.join-img-2{
+.join-img-2 {
   display: none;
 }
 
@@ -795,9 +820,11 @@ body {
 }
 
 .cssh {
-  background: linear-gradient(99.64deg,
+  background: linear-gradient(
+      99.64deg,
       rgba(0, 129, 89, 0.25) 2.59%,
-      rgba(2, 188, 230, 0.25) 111.36%),
+      rgba(2, 188, 230, 0.25) 111.36%
+    ),
     url(./images/memphis.png), url(./images/memphis\ C.png),
     url(./images/memphi.png);
   background-position: left 0%, right 100%, right 0%;
@@ -875,7 +902,7 @@ footer {
   color: #ffffff;
 }
 
-.footer-links{
+.footer-links {
   flex-basis: 70%;
   display: flex;
   justify-content: space-between;
@@ -907,7 +934,7 @@ footer {
   align-items: center;
 }
 
-.mob-copyright{
+.mob-copyright {
   display: none;
 }
 
@@ -929,6 +956,6 @@ footer {
   gap: 16px;
 }
 
-.mob-social-links{
+.mob-social-links {
   display: none;
 }
